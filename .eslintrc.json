@@ -1,15 +1,25 @@
 {
-    "env": {
-        "es2021": true,
-        "node": true
-    },
-    "extends": [
-        "airbnb-base"
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-console": "off",
+    "eqeqeq": "off",
+    "curly": "error",
+    "quotes": ["error", "double"],
+    "overrides": [
+      {
+        "files": ["*-test.js", "*.spec.js"],
+        "rules": {
+          "no-unused-expressions": "off"
+        }
+      }
     ],
-    "parserOptions": {
-        "ecmaVersion": 2020
-    },
-    "rules": {
-        "no-console": "off"
-    }
+    "noInlineConfig": true
+  }
 }
