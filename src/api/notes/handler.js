@@ -1,8 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable quotes */
-/* eslint-disable lines-between-class-members */
-/* eslint-disable linebreak-style */
 const ClientError = require("../../exceptions/ClientError");
 
 class NotesHandler {
